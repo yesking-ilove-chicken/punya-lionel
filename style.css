@@ -1,185 +1,185 @@
-.desktop {
-  background-color: #0e6743;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #FF69B4; /* Hot Pink - Romantis */
+    --secondary-color: #9370DB; /* Medium Purple */
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-light: #FFF0F5; /* Lavender Blush - Background Lembut */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.desktop .div {
-  background-color: #0e6743;
-  overflow: hidden;
-  mix-blend-mode: lighten;
-  width: 1440px;
-  height: 1024px;
-  position: relative;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.desktop .judul {
-  position: absolute;
-  width: 313px;
-  top: 65px;
-  left: 54px;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #ffffff;
-  font-size: 32px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.desktop .overlap {
-  position: absolute;
-  width: 853px;
-  height: 102px;
-  top: 62px;
-  left: 559px;
+/* Header & Footer */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: var(--shadow);
 }
 
-.desktop .BERANDA-LAYANAN {
-  position: absolute;
-  width: 806px;
-  top: 15px;
-  left: 0;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.desktop .text-wrapper {
-  position: absolute;
-  width: 177px;
-  top: 13px;
-  left: 499px;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #ffffff;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    background-color: #f7e6ea;
+    color: var(--text-dark);
 }
 
-.desktop .rectangle {
-  position: absolute;
-  width: 154px;
-  height: 62px;
-  top: 0;
-  left: 629px;
-  background-color: #d9d9d9;
+/* Container Utama */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--text-light);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    flex-grow: 1;
 }
 
-.desktop .text-wrapper-2 {
-  position: absolute;
-  width: 194px;
-  top: 13px;
-  left: 659px;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #1e6743;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
+h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.desktop .img {
-  position: absolute;
-  width: 141px;
-  height: 70px;
-  top: 403px;
-  left: 1877px;
+/* Input Section */
+.input-section, .output-section {
+    padding: 20px 0;
 }
 
-.desktop .overlap-group {
-  position: absolute;
-  width: 1332px;
-  height: 763px;
-  top: 261px;
-  left: 108px;
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    transition: border-color 0.3s;
 }
 
-.desktop .overlap-group-2 {
-  position: absolute;
-  width: 1332px;
-  height: 763px;
-  top: 0;
-  left: 0;
+textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
 }
 
-.desktop .text-wrapper-3 {
-  position: absolute;
-  width: 833px;
-  top: 0;
-  left: 6px;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
+/* Tombol */
+.primary-btn, .secondary-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
-.desktop .rumah-impian-hadir {
-  position: absolute;
-  width: 839px;
-  top: 160px;
-  left: 0;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #ffffff;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.4);
 }
 
-.desktop .rectangle-2 {
-  position: absolute;
-  width: 744px;
-  height: 579px;
-  top: 184px;
-  left: 588px;
-  object-fit: cover;
+.primary-btn:hover {
+    background-color: #e8529e;
+    transform: translateY(-2px);
 }
 
-.desktop .div-wrapper {
-  position: absolute;
-  width: 343px;
-  height: 123px;
-  top: 270px;
-  left: 7px;
-  background-color: #d9d9d9;
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(147, 112, 219, 0.4);
 }
 
-.desktop .text-wrapper-4 {
-  position: absolute;
-  width: 267px;
-  top: 43px;
-  left: 38px;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 800;
-  color: #1e6743;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
+.secondary-btn:hover {
+    background-color: #7d5bb0;
+    transform: translateY(-2px);
 }
 
-.desktop .rectangle-3 {
-  position: absolute;
-  width: 97px;
-  height: 16px;
-  top: 287px;
-  left: 382px;
-  background-color: #d9d9d9;
-  transform: rotate(45deg);
+/* Output Section */
+.gombalan-box {
+    min-height: 100px;
+    padding: 20px;
+    background-color: #fce4ec; /* Background Output Lembut */
+    border: 3px dashed var(--primary-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    color: var(--text-dark);
+    transition: all 0.5s ease;
 }
 
-.desktop .rectangle-4 {
-  position: absolute;
-  width: 81px;
-  height: 81px;
-  top: 314px;
-  left: 391px;
+.gombalan-text {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    animation: fadeIn 1s ease-out;
+}
+
+.placeholder-text {
+    color: #aaa;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.separator {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    margin: 20px 0;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

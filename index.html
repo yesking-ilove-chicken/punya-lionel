@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="desktop">
-      <div class="div">
-        <div class="judul">Rumah Impian</div>
-        <div class="overlap">
-          <div class="BERANDA-LAYANAN">
-            BERANDA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LAYANAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            FITUR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KONTAK
-          </div>
-          <div class="text-wrapper">DAFTAR</div>
-          <div class="rectangle"></div>
-          <div class="text-wrapper-2">MASUK</div>
-        </div>
-        <img class="img" src="img/rectangle-1.svg" />
-        <div class="overlap-group">
-          <div class="overlap-group-2">
-            <div class="text-wrapper-3">MEMBANTU TEMUKAN RUMAH IMPIAN</div>
-            <p class="rumah-impian-hadir">
-              Rumah Impian hadir untuk temukan rumah terbaik untukmu,<br />
-              untuk dijual ataupun di sewa dengan sumber terpercaya.
-            </p>
-            <img class="rectangle-2" src="gambar rumah onel.png.png" />
-          </div>
-          <div class="div-wrapper"><div class="text-wrapper-4">Temukan Rumah</div></div>
-          <div class="rectangle-3"></div>
-          <img class="rectangle-4" src="img/rectangle-5.svg" />
-        </div>
-      </div>
-    </div>
-  </body>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words for ur Fineshyt | Gombalan Romantis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Words for ur Fineshyt ✨</div>
+    </header>
+
+    <main class="container">
+        <section class="input-section">
+            <label for="permintaan">
+                <h2>💌 Gombalan Buat Si Dia:</h2>
+            </label>
+            <textarea id="permintaan" placeholder="Contoh: 'aku mau membuat kalimat untuk cewe ku yang lagi bete' atau 'gombalan bikin semangat kerja'..." rows="3"></textarea>
+            <button id="buatGombalanBtn" class="primary-btn">
+                Buat Gombalan! ❤️
+            </button>
+        </section>
+        
+        <div class="separator"></div>
+
+        <section class="output-section">
+            <h2>🎉 Hasil Gombalan Romantis:</h2>
+            <div id="hasilGombalan" class="gombalan-box">
+                <p class="placeholder-text">Kata-kata gombalanmu akan muncul di sini. Coba ketik permintaannya dulu!</p>
+            </div>
+            <button id="salinGombalanBtn" class="secondary-btn" style="display: none;">
+                Salin Gombalan
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fineshyt Generator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
